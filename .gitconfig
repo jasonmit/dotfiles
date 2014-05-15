@@ -1,0 +1,13 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	s = status
+	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	oldest-ancestor = !zsh -c 'diff --old-line-format=' --new-line-format=' <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | head -1' -
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[user]
+	name = Jason Mitchell
+	email = jasonmit@yahoo-inc.com
