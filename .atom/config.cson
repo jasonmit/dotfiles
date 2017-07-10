@@ -1,0 +1,66 @@
+"*":
+  "atom-clock":
+    dateFormat: "h:mm a"
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    excludeVcsIgnoredPaths: false
+    followSymlinks: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "nginx-access.log"
+      "nginx-error.log"
+      "Thumbs.db"
+      "node_modules"
+      "bower_components"
+      "tmp"
+      "dist"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 10
+    preferredLineLength: 120
+    showInvisibles: true
+    tabType: "soft"
+  jumpy:
+    fontSize: 1
+  linter: {}
+  "linter-eslint":
+    globalNodePath: "~/.nvm/versions/node/v8.1.3"
+  "one-dark-ui":
+    fontSize: 10
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#1b1b1b"
+        blue: "#2989e7"
+        cyan: "#61f1f1"
+        green: "#8bfb71"
+        magenta: "#ff38ff"
+        red: "#f72d2d"
+        white: "#ededed"
+        yellow: "#fbe54a"
+      zBright:
+        brightGreen: "#80ff80"
+    core: {}
+    iconColors:
+      cyan: "#a3ffff"
+      green: "#53ff53"
+    style:
+      theme: "one-dark"
+  "prettier-atom":
+    prettierOptions:
+      printWidth: 120
+      singleQuote: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
