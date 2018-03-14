@@ -91,3 +91,6 @@ export ANDROID_HOME=${HOME}/Android/Sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:${HOME}/.config/yarn/global/node_modules/.bin
+
+alias ember-debug="npx --node-arg=--inspect --node-arg=--debug-brk ember s"
+alias decaf="decaffeinate --prefer-const --loose-default-params --loose-for-of --loose-includes"
